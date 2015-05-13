@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Michinari \textsc{Sakai}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Los Angeles, USA  | 16 October 1980\\
+\textsc{Address:} & 60 N. Nimitz Hwy. \#1107, Honolulu, HI, USA\\
+\textsc{Phone:} & +1-808-206-435\\
+\textsc{email:} & \href{mailto:michinar@hawaii.edu}{michinar@hawaii.edu}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{11cm}}	
+	\textsc{December} 2015 (expected) & Ph.D. in \textsc{Physics}, \textbf{The
+University of Hawaii}, Manoa\\
+	& Thesis: ``High Energy Neutrino Analysis in KamLAND and Application to Dark
+Matter Search''\\
+	& \small Advisor: Prof. John G. \textsc{Learned}\\
+
+%------------------------------------------------
+
+	\textsc{December} 2006 - 2007 & Graduate Program in
+	\textsc{}\textsc{Mathematics}, \normalsize\textbf{Sun Moon University},
+	South Korea\\
+	& \small Advisor: Prof. Doe-Wan \textsc{Kim}\\
+
+%------------------------------------------------
+
+	\textsc{Fall} 2005 & Double B.Sc. in \textsc{Physics} and
+	\textsc{Mathematics}, \textbf{Sun Moon University},\\
+	& South Korea\\
+	& \small Honors: Double Cum Laude\\
+	& \small Advisor: Prof. Ki-Won \textsc{Kim}\\
+
+%------------------------------------------------
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Jul 2009 - }\textit{Current} & Research Assistant\\
+& \footnotesize{
+	Developed directional reconstruction algorithm for high-energy
+	neutrinos in KamLAND.
+	First ever physics application (dark matter search) of neutrino
+	directionality in scintillator experiments.
+}\\
+& \footnotesize{
+	Lead GEANT4 simulation developer for mini Time-Cube project at
+	University of Hawaii.
+	Examined trade studies for various neutron capture dopants in
+	scintillator.
+	Contributed to neutrino/neutron directional reconstruction algorithm.
+	Conducted background studies for long-lived isotopes produced from
+	cosmogenic muons.
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jul 2007 - Oct 2009} & Teaching Assistant\\
+& \footnotesize{
+	Taught two undergraduate physics mechanics laboratory courses per semester.
+	Received positive reviews.
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan 2002 - Mar 2006} & Interpreter and Teacher\\
+& \footnotesize{(Mar. 2006) Part time English lecturer for Korean undergraduate
+students.}\\
+& \footnotesize{(Mar. 2004 - Dec. 2005) Part time contributing reporter and
+translator for university magazine.}\\
+& \footnotesize{(Jul. 2004) Spontaneous trilingual interpreter for W-CARP
+International Education Conference.}\\
+& \footnotesize{(Mar. 2003 - Mar. 2004) Part time translator for Today's World
+Magazine.}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{rl}
+	Tools: & \textsc{ROOT}, \textsc{Geant4}, \textsc{Pads}\\
+	Languages: & C++, Python, Fortran, Perl, Mathematica, Matlab, Bash, VHDL\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Awards}
+
+\begin{tabular}{rl}
+	2004 & Award for Outstanding Academic Acheivement, Samsung Corp.\\
+	2001, 2002, 2003, 2004 & Undergraduate Achievement Scholarships, Sun Moon
+	Univ.\\
+	2001 & Ae-Guk Freshman Scholarship, Sun Moon Univ.\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+	\textsc{English}, \textsc{Japanese}, \textsc{Korean}\\
+\end{tabular}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{tabular}{rp{11cm}}
+	Aug. 2011 & J. Kumar, J. G. Learned, M. Sakai, S. Smith,
+	\textsc{Dark Matter Detection With Electron Neutrinos in Liquid
+	Scintillation Detectors}, Phys.Rev. D84 (2011) 036007\\
+
+	Mar. 2015 & K. Asakura et al., \textsc{Study of electron anti-neutrinos
+	associated with gamma-ray bursts using KamLAND}, arXiv:1503.02137v1\\
+	Feb. 2015 & T. I. Banks et al., \textsc{A compact ultra-clean system for
+	deploying radioactive sources inside the KamLAND detector},
+	10.1016/j.nima.2014.09.068\\
+	Jan. 2015 & C. Lane et al., \textsc{A new type of Neutrino Detector for
+	Sterile Neutrino Search at Nuclear Reactors and Nuclear Nonproliferation
+	Applications}, arXiv:1501.06935v1\\
+	May 2014 & A. Gando et al., \textsc{7Be Solar Neutrino Measurement with
+	KamLAND}, arXiv:1405.6190v1\\
+	Aug. 2011 & S. Abe et al., \textsc{Measurement of the 8B Solar Neutrino
+	Flux with the KamLAND Liquid Scintillator Detector},
+	10.1103/PhysRevC.84.035804\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	POSTERS AND TALKS
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\section{Posters and Talks}
+\begin{tabular}{rp{11cm}}
+	Aug. 2010 & Talk at AAP 2010, Sendai, Japan: Mini-TimeCube: A Portable
+	Directional Neutrino Detector\\
+	Jun. 2012 & Poster at Neutrino 2012, Kyoto, Japan: Indirect Dark-Matter
+	Detection Through KamLAND\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
