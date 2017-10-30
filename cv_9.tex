@@ -27,7 +27,7 @@
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
@@ -41,9 +41,10 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-
+\usepackage{amssymb}
 \usepackage{siunitx}
 \usepackage[version=3]{mhchem}
+\usepackage{bibentry}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
@@ -51,54 +52,22 @@
 
 \pagestyle{empty} % Removes page numbering
 
-\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Michinari \textsc{Sakai}}\bigskip\par} % Your name
+\par{\centering{\Huge \textsc{Michinari Sakai}}\bigskip\par} % Your name
 
 \section{Personal Data}
 
 \begin{tabular}{rl}
 %\textsc{Place and Date of Birth:} & Los Angeles, USA  | 16 October 1980\\
-\textsc{Place of Birth:} & Los Angeles, USA\\
-\textsc{Address:} & 60 N. Nimitz Hwy. \#1107 Honolulu, HI 96817 USA\\
+%\textsc{Place of Birth:} & Los Angeles, USA\\
+\textsc{Address:} & 475 Portola Plaza \#5-123B, Los Angeles, CA 90095, USA\\
 \textsc{Phone:} & +1-808-206-4357\\
-\textsc{email:} & \href{mailto:michinar@hawaii.edu}{michinar@hawaii.edu}
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-
-\begin{tabular}{rp{10.3cm}}	
-	\textsc{Dec.} 2015 (expected) & Ph.D. in \textsc{Physics},
-	Univ. of Hawaii, Manoa\\
-	& \small Thesis: ``High Energy Neutrino Analysis in KamLAND and Application
-	to Dark Matter Search''\\
-	& \small GPA: 3.97/4.00\\
-	& \small Advisor: Prof. John G. \textsc{Learned}\\
-
-%------------------------------------------------
-
-	\textsc{Aug.} 2005 - \textsc{Aug.} 2006 & Graduate Program in
-	\textsc{Mathematics}, Sun Moon Univ., S.~Korea\\
-	& \small GPA: 4.50/4.50\\
-	& \small Advisor: Prof. Doe-Wan \textsc{Kim}\\
-
-%------------------------------------------------
-
-	\textsc{Aug.} 2005 & Double B.S. in \textsc{Physics} and
-	\textsc{Mathematics}, Sun Moon Univ., S.~Korea\\
-	& \small Honors: Summa Cum Laude, GPA: 4.33/4.50\\
-	& \small Advisor: Prof. Ki-Won \textsc{Kim}\\
-
-%------------------------------------------------
-
+\textsc{email:} & \href{mailto:michsakai@ucla.edu}{michsakai@ucla.edu}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -108,7 +77,19 @@
 \section{Work Experience}
 
 \begin{tabular}{r|p{10.4cm}}
-\textsc{Aug. 2009 - }\textit{Current} & Research Assistant\\
+\textsc{Apr. 2016 - }\textit{Current} & Post-doctoral Scholar, University of California, Los Angeles\\
+& \footnotesize{
+	\textsc{CUORE}: Currently working on improving Monte Carlo simulation for
+	background modeling to better understand radioactive contamination in the
+	detector. Also worked on bolometric thermal model and its application to
+	develop simulated data for CUORE as well as other data processing
+	techniques such as thermal gain stabilization of bolometer pulses.
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Aug. 2009 - Apr. 2016} & Research Assistant, University of Hawaii at Manoa\\
 & \footnotesize{
 	\textsc{KamLAND}: Developed directional reconstruction algorithm for
 	high-energy neutrinos and conducted track reconstruction and
@@ -128,7 +109,7 @@
 
 %------------------------------------------------
 
-\textsc{Aug. 2007 - May. 2009} & Teaching Assistant\\
+\textsc{Aug. 2007 - May. 2009} & Teaching Assistant, University of Hawaii at Manoa\\
 & \footnotesize{
 	Taught two undergraduate physics mechanics laboratory courses per semester.
 	Received positive reviews.
@@ -161,6 +142,38 @@ International Education Conference.}\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{10.3cm}}	
+	\textsc{Apr.} 2016 & Ph.D. in \textsc{Physics},
+	Univ. of Hawaii at Manoa\\
+	& \small Dissertation: High Energy Neutrino Analysis in KamLAND and
+	Application to Dark Matter Search\\
+	& \small GPA: 3.97/4.00\\
+	& \small Advisor: Prof. John G. \textsc{Learned}\\
+
+%------------------------------------------------
+
+	\textsc{Aug.} 2005 - \textsc{Aug.} 2006 & Graduate Program in
+	\textsc{Mathematics}, Sun Moon Univ., S.~Korea\\
+	& \small GPA: 4.50/4.50\\
+	& \small Advisor: Prof. Doe-Wan \textsc{Kim}\\
+
+%------------------------------------------------
+
+	\textsc{Aug.} 2005 & Double B.S. in \textsc{Physics} and
+	\textsc{Mathematics}, Sun Moon Univ., S.~Korea\\
+	& \small Honors: Summa Cum Laude, GPA: 4.33/4.50\\
+	& \small Advisor: Prof. Ki-Won \textsc{Kim}\\
+
+%------------------------------------------------
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND AWARDS
 %----------------------------------------------------------------------------------------
 
@@ -168,7 +181,7 @@ International Education Conference.}\\
 
 \begin{tabular}{rl}
 	2004 & Award for Outstanding Academic Achievement, Samsung Corp.\\
-	2001, 2002, 2003, 2004 & Undergraduate Achievement Scholarships, Sun Moon
+	2001 - 2004 & Undergraduate Achievement Scholarships, Sun Moon
 	Univ.\\
 	2001 & Ae-Guk Freshman Scholarship, Sun Moon Univ.\\
 \end{tabular}
@@ -189,52 +202,61 @@ International Education Conference.}\\
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 
-\section{Publications}
+\renewcommand\refname{Publications} %changes default name to Publications
+\nocite{*} %lists everything in the .bib file
+\bibliographystyle{plain} %hundreds of styles to choose from
+\bibliography{publications.bib} %name of your .bib file
 
-\begin{tabular}{rp{11cm}}
-	\multicolumn{2}{l}{\textsc{mini-TimeCube}} \\
-	2015 (expected) & V.A. Li et al., \textsc{mini-TimeCube}, RSI Invited Review\\
-	\multicolumn{2}{c}{} \\
-	\multicolumn{2}{l}{\textsc{KamLAND}} \\
-	2015 (expected) & K. Asakura et al., \textsc{Search for the Proton Decay
-Mode $p \rightarrow \overline{\nu} K^{+}$ with KamLAND}, Phys. Rev. D\\
-	Mar. 2015 & K. Asakura et al., \textsc{Study of electron anti-neutrinos
-	associated with gamma-ray bursts using KamLAND}, arXiv:1503.02137v1\\
-	Feb. 2015 & T.I. Banks et al., \textsc{A compact ultra-clean system for
-	deploying radioactive sources inside the KamLAND detector},
-	10.1016/j.nima.2014.09.068\\
-	Jan. 2015 & C. Lane et al., \textsc{A new type of Neutrino Detector for
-	Sterile Neutrino Search at Nuclear Reactors and Nuclear Nonproliferation
-	Applications}, arXiv:1501.06935v1\\
-	May 2014 & A. Gando et al., \textsc{7Be Solar Neutrino Measurement with
-	KamLAND}, arXiv:1405.6190v1\\
-	Aug. 2011 & S. Abe et al., \textsc{Measurement of the 8B Solar Neutrino
-	Flux with the KamLAND Liquid Scintillator Detector},
-	10.1103/PhysRevC.84.035804\\
-	Aug. 2011 & J. Kumar, J.G. Learned, M. Sakai, S. Smith,
-	\textsc{Dark Matter Detection With Electron Neutrinos in Liquid
-	Scintillation Detectors}, Phys. Rev. D84 (2011) 036007\\
-\end{tabular}
+%\section{Publications}
+%
+%\begin{tabular}{rp{11cm}}
+%	\multicolumn{2}{l}{\textsc{mini-TimeCube}} \\
+%	2015 (expected) & V.A. Li et al., \textsc{mini-TimeCube}, RSI Invited Review\\
+%	\multicolumn{2}{c}{} \\
+%	\multicolumn{2}{l}{\textsc{KamLAND}} \\
+%	2015 (expected) & K. Asakura et al., \textsc{Search for the Proton Decay
+%Mode $p \rightarrow \overline{\nu} K^{+}$ with KamLAND}, Phys. Rev. D\\
+%	Mar. 2015 & K. Asakura et al., \textsc{Study of electron anti-neutrinos
+%	associated with gamma-ray bursts using KamLAND}, arXiv:1503.02137v1\\
+%	Feb. 2015 & T.I. Banks et al., \textsc{A compact ultra-clean system for
+%	deploying radioactive sources inside the KamLAND detector},
+%	10.1016/j.nima.2014.09.068\\
+%	Jan. 2015 & C. Lane et al., \textsc{A new type of Neutrino Detector for
+%	Sterile Neutrino Search at Nuclear Reactors and Nuclear Nonproliferation
+%	Applications}, arXiv:1501.06935v1\\
+%	May 2014 & A. Gando et al., \textsc{7Be Solar Neutrino Measurement with
+%	KamLAND}, arXiv:1405.6190v1\\
+%	Aug. 2011 & S. Abe et al., \textsc{Measurement of the 8B Solar Neutrino
+%	Flux with the KamLAND Liquid Scintillator Detector},
+%	10.1103/PhysRevC.84.035804\\
+%	Aug. 2011 & J. Kumar, J.G. Learned, M. Sakai, S. Smith,
+%	\textsc{Dark Matter Detection With Electron Neutrinos in Liquid
+%	Scintillation Detectors}, Phys. Rev. D84 (2011) 036007\\
+%\end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	POSTERS AND TALKS
 %----------------------------------------------------------------------------------------
 
-\section{Posters and Talks}
+\section{Presentations and Posters}
 \begin{tabular}{rp{11cm}}
-	Jul. 2015 & Talk for DOE review, Honolulu, Hawaii,
-	\textsc{High Energy Analysis and Application to Dark Matter Search in KamLAND}\\
-	Jun. 2012 & Poster at Neutrino 2012, Kyoto, Japan, \textsc{Indirect
-	Dark-Matter Detection Through KamLAND}\\
-	Nov. 2010, 2011 & Talks at Univ. of Hawaii campus open house, Honolulu,
-	Hawaii, \textsc{What is a Neutrino?}, \textsc{mini-TimeCube: The World's
-		Smallest Neutrino Detector}\\
-	Aug. 2010 & Talk at AAP 2010, Sendai, Japan, \textsc{mini-TimeCube: A
-	Portable Directional Neutrino Detector}\\
-	Sep. 2009 & Talk for DOE review, Honolulu, Hawaii, \textsc{KamLAND
-Summary}\\
-	Jul. 2009 & Talk at International Neutrino Summer School, Fermilab,
-\textsc{Student presentation: How to solve $\theta_{23}$ degeneracy}\\
+	Oct 2017 & \textsc{CUORE and Background Reduction Case Studies for CUPID},
+	DNP 2017, Pittsburgh, Pennsylvania \\
+	May 2017 & \textsc{Status of the CUORE $0\nu\beta\beta$ Decay Search},
+	invited talk at the Conference on Science at SURF, South Dakota \\
+	Jul 2015 & \textsc{High Energy Analysis and Application to Dark Matter
+	Search in KamLAND}, talk for DOE review, Honolulu, Hawaii \\
+	Jun 2012 & \textsc{Indirect Dark-Matter Detection Through KamLAND}, poster
+	at Neutrino 2012, Kyoto, Japan \\
+	Nov 2010, 2011 & \textsc{What is a Neutrino?}, \textsc{mini-TimeCube: The
+	World's Smallest Neutrino Detector}, talks at Univ. of Hawaii campus open
+	house, Honolulu, Hawaii \\
+	Aug 2010 & \textsc{mini-TimeCube: A Portable Directional Neutrino Detector}
+	talk at AAP 2010, Sendai, Japan \\
+	Sep 2009 & \textsc{KamLAND Summary}, talk for DOE review, Honolulu,
+	Hawaii \\
+	Jul 2009 & \textsc{Student presentation: How to solve $\theta_{23}$
+	degeneracy}, International Neutrino Summer School, Fermilab \\
 	
 \end{tabular}
 
@@ -243,41 +265,57 @@ Summary}\\
 %----------------------------------------------------------------------------------------
 
 \section{Statement of Research Interests and Experience}
-My main interest has been in directional neutrino reconstruction and its
-applications such as indirect dark matter searches, directional geo-neutrino
-measurements, and anti-nuclear proliferation techniques that involve locating
-the position of the source.
+
+I have been involved with the CUORE (Cryogenic Underground Observatory for Rare
+Events) experiment at the University of California, Los Angeles since April of
+2016. My main work currently involves development of the Geant4 Monte Carlo
+simulation to better understand the radio active backgrounds in the detector.
+The energy spectrum of the backgrounds in the so called alpha region ($\gtrsim
+\SI{2.5}{\mega\electronvolt}$) exhibit peculiar features that can better
+explain the types of sources and their distributions in various parts and
+materials of the detector. This can help us to better understand our
+backgrounds and extrapolate this knowledge to the energy region of interest
+(\SIrange{2465}{2575}{\kilo\electronvolt}) for $0\nu\beta\beta$ decay of
+\ce{^{130}Te}. I have also worked on thermal modeling of the detector
+bolometers and its application toward developing simulated data for CUORE as
+well as other data processing techniques such as thermal gain stabilization of
+bolometer signals.
+
+My main interest during my graduate studies has been in directional neutrino
+reconstruction and its applications such as indirect dark matter searches,
+directional geo-neutrino measurements, and anti-nuclear proliferation
+techniques that involve locating the position of the source.
 %My main interest has been in detector development and novel techniques to search
 %for previously unexplored phase-space regions in neutrino physics. 
 %My main interest and past research experience has been in detector development
 %and developing novel techniques to open new methods of exploration in neutrino
 %physics. 
 
-I have been involved with three projects during my graduate studies at
-University of Hawaii with my advisor Prof. John Learned; the \SI{1}{\kilo\tonne}
-liquid scintillator neutrino experiment KamLAND in Japan, a portable
+I have been involved with three projects at the University of Hawaii: the
+\SI{1}{\kilo\tonne} liquid scintillator neutrino experiment KamLAND (Kamioka
+Liquid Scintillator Antineutrino Detector) in Japan, a portable
 \SI{2.2}{\liter} plastic scintillator neutrino experiment called the
-mini-TimeCube, and a third related to scintillator R\&D for a future
-\SI{10}{\kilo\tonne}-scale deep-sea based neutrino detector HanoHano.
+mini-TimeCube, and scintillator R\&D for a future \SI{10}{\kilo\tonne}-scale
+deep-sea based neutrino detector HanoHano.
 
 My work in KamLAND has involved developing directional event reconstruction
 methods for high-energy $\sim$\si{\giga\electronvolt} scale neutrinos and
-applying this to conduct an indirect dark matter search by looking at neutrinos
-from the Earth's core. Studies done with Monte Carlo suggest that the accuracy
-of reconstructing the neutrino direction using this method is better than that
-of water-Cherenkov detectors by $\sim$\SI{10}{\degree} for energies
-$\sim$\SI{1}{\giga\electronvolt} and greater. This method is now being tested
-against events spilling into KamLAND from the T2K neutrino beam-line and the
-initial results are consistent with what is expected. I believe this is a first
-ever physics application of neutrino directionality in a scintillator
-experiment.
+applying this to conduct an indirect dark matter search by looking at excess
+neutrinos from the core of the Sun and Earth. Studies done with Monte Carlo
+suggest that the accuracy of reconstructing the neutrino direction using this
+method is better than that of water-Cherenkov detectors by
+$\sim$\SI{10}{\degree} for energies $\sim$\SI{1}{\giga\electronvolt} and
+greater. This method was tested against initial events spilling into KamLAND
+from the T2K neutrino beam-line and the results were consistent with what was
+expected. I believe this is the first ever physics application of neutrino
+directionality in a scintillator experiment.
 
 In addition, I have worked as the lead GEANT4 simulation designer for the
 mini-TimeCube collaboration to conduct case studies for optimizing the detector
 design, test candidate neutron capture doping elements in plastic scintillator,
 and simulate the response of the multi-channel-plate (MCP) PMTs deployed in the
 detector. These studies were used during construction of the detector, and to
-develop directional algorithms that are now being tested in analysis of neutrons
+develop directional algorithms that are now being tested in analyses of neutrons
 from test sources as well as neutrinos from nuclear reactors. I have also
 conducted simulation studies for cosmic-ray muons and long-lived cosmogenic
 background isotopes such as \ce{^{8}He} and \ce{^{9}Li}. These backgrounds are
@@ -293,11 +331,10 @@ scintillators when put in large electric potential gradients as well as testing
 their light transmissivity under extreme temperatures and pressures such as
 those found in deep-sea environments.
 
-I believe my graduate studies have already given me ample experience in physics
-analysis and simulation techniques. As a post-doctorate researcher, I am looking
-for an integrated work environment where I can get hands-on experience with
-detector hardware, electronics, and firmware development while, at the same
-time, applying my skills in simulation and analysis.
+As a post-doctorate researcher, I am looking for an integrated work environment
+where I can get hands-on experience with detector hardware, electronics, and
+firmware development while, at the same time, applying my skills in simulation
+and analysis.
 
 %----------------------------------------------------------------------------------------
 %	REFERENCES
@@ -309,17 +346,21 @@ time, applying my skills in simulation and analysis.
 %\multicolumn{2}{l}{\footnotesize{Supplied upon request or please contact in
 %person.}}\\
 \multicolumn{2}{c}{}\\
-John G. \textsc{Learned} & Professor, Univ. of Hawaii, +1-808-956-2964,
+Huan H. \textsc{Huang} & Professor. Univ. of California, Los Angeles, +1-310-825-9297,
+\href{mailto:huang@physics.ucla.edu}{\nolinkurl{huang@physics.ucla.edu}}\\
+John G. \textsc{Learned} & Professor, Univ. of Hawaii at Manoa, +1-808-956-2964,
 \href{mailto:jgl@phys.hawaii.edu}{\nolinkurl{jgl@phys.hawaii.edu}}\\
+Thomas \textsc{O'Donnell} & Assistant Professor, Virginia Tech, +1-540-231-3308,
+\href{mailto:tdonnell@vt.edu}{\nolinkurl{todonnel@vt.edu}}\\
 
-Kunio \textsc{Inoue} & Professor, Tohoku Univ./RCNS, +81-22-795-6727,
-\href{mailto:inoue@awa.tohoku.ac.jp}{\nolinkurl{inoue@awa.tohoku.ac.jp}}\\
-
-Jason \textsc{Kumar} & Assoc. Professor, Univ. of Hawaii, +1-808-956-2972,
-\href{mailto:jkumar@phys.hawaii.edu}{\nolinkurl{jkumar@phys.hawaii.edu}}\\
-
-Jelena \textsc{Maricic} & Assoc. Professor, Univ. of Hawaii, +1-808-956-7176,
-\href{mailto:jelena@phys.hawaii.edu}{\nolinkurl{jelena@phys.hawaii.edu}}\\
+%Kunio \textsc{Inoue} & Professor, Tohoku Univ./RCNS, +81-22-795-6727,
+%\href{mailto:inoue@awa.tohoku.ac.jp}{\nolinkurl{inoue@awa.tohoku.ac.jp}}\\
+%
+%Jason \textsc{Kumar} & Assoc. Professor, Univ. of Hawaii, +1-808-956-2972,
+%\href{mailto:jkumar@phys.hawaii.edu}{\nolinkurl{jkumar@phys.hawaii.edu}}\\
+%
+%Jelena \textsc{Maricic} & Assoc. Professor, Univ. of Hawaii, +1-808-956-7176,
+%\href{mailto:jelena@phys.hawaii.edu}{\nolinkurl{jelena@phys.hawaii.edu}}\\
 
 %Adam \textsc{Bernstein} & P.I. Applied Antineutrino Physics, LLNL,
 %\href{mailto:bernstein3@llnl.gov}{\nolinkurl{bernstein3@llnl.gov}}\\
